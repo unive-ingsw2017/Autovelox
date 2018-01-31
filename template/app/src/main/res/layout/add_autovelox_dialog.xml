@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Adding new autovelox:\n CP -> in current position\n TP -> in tap position"
+        android:layout_margin="16dp"
+        android:id="@+id/q_new_autovelox"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Cancel"
+        android:layout_marginLeft="6dp"
+        android:id="@+id/cancel_operation"
+        android:layout_below="@+id/q_new_autovelox"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="CP"
+        android:id="@+id/CP"
+        android:layout_below="@+id/q_new_autovelox"
+        android:layout_toRightOf="@+id/cancel_operation"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="TP"
+        android:id="@+id/TP"
+        android:layout_below="@+id/q_new_autovelox"
+        android:layout_toRightOf="@+id/CP"/>
+
+</RelativeLayout>
